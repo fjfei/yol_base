@@ -46,6 +46,24 @@
       </div><!-- /.navbar-collapse -->
     </nav><!-- /.navbar -->
   </div> <!-- /.container -->
+
+  <!-- 通栏导航条 -->
+  <div class="nav-background"><div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul id="v-menu" class="v-menu nav navbar-nav"><li><a href="#" class="">全村菜单</a></li></ul >
+
+        <?php if ($main_menu): ?>
+          <ul id="main-menu" class="menu nav navbar-nav">
+            <?php print render($main_menu); ?>
+          </ul>
+        <?php endif; ?>
+
+        <div class="menu_member"> 会员</div>
+      </div><!-- /.navbar-collapse -->
+    </nav><!-- /.navbar -->
+  </div></div> <!-- /.container  fluid -->
 </header>
 
 <div id="main-wrapper">
