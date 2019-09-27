@@ -12,39 +12,22 @@
 ?>
 <header id="header" class="header" role="header">
   <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+    <nav class="nav_bar" role="navigation">
+	    <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+          <span class="sr-only"><?php print t('莱单'); ?></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <?php if ($site_name || $logo): ?>
-          <a href="<?php print $front_page; ?>" class="navbar-brand" rel="home" title="<?php print t('Home'); ?>">
-            <?php if ($logo): ?>
-              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo" />
-            <?php endif; ?>
-            <?php if ($site_name): ?>
-              <span class="site-name"><?php print $site_name; ?></span>
-            <?php endif; ?>
-          </a>
-        <?php endif; ?>
+<?php
+  //$block = module_invoke('module_name', 'block_view', 'block_delta');
+  $block = module_invoke('views', 'block_view', 'show_site_logo-block_w3');
+  print render($block['content']);
+?> 
+        <div class="navbar-top">  微信 微博 | 语言		</div>
       </div> <!-- /.navbar-header -->
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <?php if ($main_menu): ?>
-          <ul id="main-menu" class="menu nav navbar-nav">
-            <?php print render($main_menu); ?>
-          </ul>
-        <?php endif; ?>
-        <?php if ($search_form): ?>
-          <?php print $search_form; ?>
-        <?php endif; ?>
-      </div><!-- /.navbar-collapse -->
-    </nav><!-- /.navbar -->
+	  </nav>
   </div> <!-- /.container -->
 
   <!-- 通栏导航条 -->
