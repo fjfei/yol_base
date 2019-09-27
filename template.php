@@ -13,9 +13,11 @@ foreach (glob($includes_path) as $filename) {
 /**
  * Implements template_preprocess_page().
  */
-function {{machine_name}}_preprocess_page(&$variables) {
+/*
+function yol_base_preprocess_page(&$variables) {
   // Add copyright to theme.
   if ($copyright = theme_get_setting('copyright')) {
     $variables['copyright'] = check_markup($copyright['value'], $copyright['format']);
   }
 }
+*/
