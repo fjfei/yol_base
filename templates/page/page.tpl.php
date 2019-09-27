@@ -85,11 +85,19 @@
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
 
+<div class="footer_top footer" role="footer">
+  <div class="container">
+    <div class="row"><div class="col-xs-12">微信微博</div> </div>
+  </div>
+</div>
 <footer id="footer" class="footer" role="footer">
   <div class="container">
-    <?php if ($copyright): ?>
-      <small class="copyright pull-left"><?php print $copyright; ?></small>
-    <?php endif; ?>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">栏 1 左</div>
+      <div class="col-xs-12 col-sm-6">栏 2 右</div>
+	  <div class="col-xs-12">栏 3</div>
+    </div>
+    <small class="copyright pull-left">版权</small>
     <small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small>
   </div>
 </footer>
