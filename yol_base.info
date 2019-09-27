@@ -1,11 +1,11 @@
-name        = {{Name}}
-description = {{Description}}
+name        = yol base
+description = yol base theme
 screenshot  = screenshot.png
 core        = 7.x
 
 ; Base - Radix
 base theme  = radix
-hidden = true
+;hidden = true
 
 ; Regions
 regions[content] = Content
@@ -21,17 +21,13 @@ plugins[panels][layouts] = panels/layouts
 plugins[panels][styles] = panels/styles
 
 ; CSS - General
-stylesheets[all][]     = assets/css/{{machine_name}}.style.css
+stylesheets[all][]     = assets/css/yol_base.style.css
 
 ; Javascript
-scripts[] = assets/js/{{machine_name}}.script.js
+;scripts[] = assets/js/{{machine_name}}.script.js
 
 ; Maximum depth for dropdown menus (1 = no dropdowns, 2 = single dropdown,
 ; 3 or greater = nested dropdown menus).
 settings[main_menu_max_depth] = 2
 
-; Information added by Drupal.org packaging script on 2019-04-22
-version = "7.x-3.7"
-core = "7.x"
-project = "radix"
-datestamp = "1555915095"
+version = "7.x-1.0"
