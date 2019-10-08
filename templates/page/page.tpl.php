@@ -12,26 +12,27 @@
 ?>
 <header id="header" class="header" role="header">
   <div class="container">
-    <nav class="nav_bar" role="navigation">
-	    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only"><?php print t('莱单'); ?></span>
+    <nav class="nav-bar" role="navigation">
+	    <div class="navbar-header-top">
+        <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
+          <p class="menu-font"><?php print t('莱单'); ?></p>
         </button>
 <?php
   //$block = module_invoke('module_name', 'block_view', 'block_delta');
   $block = module_invoke('views', 'block_view', 'show_site_logo-block_w3');
   print render($block['content']);
 ?> 
-        <div class="navbar-top">  微信 微博 | 语言		</div>
-      </div> <!-- /.navbar-header -->
+        <div class="navbar-top pull-right">  微信 微博 | 语言</div>
+      </div> <!-- /.navbar-header-top -->
 	  </nav>
   </div> <!-- /.container -->
 
   <!-- 通栏导航条 -->
-  <div class="nav-background"><div class="container">
+  <div class="nav-wrapper"><div class="container">
     <nav class="navbar navbar-default" role="navigation">
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -43,7 +44,8 @@
           </ul>
         <?php endif; ?>
 
-        <div class="menu_member"> 会员</div>
+        <ul id="menu_member" class="menu_member nav navbar-nav navbar-right"><li><a href="#" class="">会员</a></li></ul >
+
       </div><!-- /.navbar-collapse -->
     </nav><!-- /.navbar -->
   </div></div> <!-- /.container  fluid -->
