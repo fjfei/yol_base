@@ -1,10 +1,10 @@
 {
-  "name": "{{machine_name}}",
-  "description": "{{Description}}",
+  "name": "yol_base",
+  "description": "A theme based on Radix.",
   "browserSyncProxy" : "http://drupal7.dev",
   "bowerDir": "./bower_components",
   "css": {
-    "file" : "{{machine_name}}.style.scss",
+    "file" : "yol_base.style.scss",
     "src": [
       "scss/**/*.scss"
     ],
@@ -15,7 +15,7 @@
     ]
   },
   "js": {
-    "file" : "{{machine_name}}.script.js",
+    "file" : "yol_base.script.js",
     "src": [
       "assets/js/**/*.js"
     ],

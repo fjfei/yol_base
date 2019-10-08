@@ -1,6 +1,6 @@
 {
-  "name": "{{machine_name}}",
-  "description": "{{Description}}",
+  "name": "yol_base",
+  "description": "A theme based on Radix.",
   "private": true,
   "ignore": [
     "**/.*",
