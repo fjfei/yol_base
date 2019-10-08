@@ -101,6 +101,6 @@
       <div class="col-xs-12 col-sm-6">栏 2 右</div>
 	    <div class="col-xs-12">栏 3</div>
     </div>
-    <small class="copyright pull-left">版权</small>
+    <small class="copyright">版权</small>
   </div>
 </footer>
