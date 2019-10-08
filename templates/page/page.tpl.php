@@ -102,6 +102,5 @@
 	    <div class="col-xs-12">栏 3</div>
     </div>
     <small class="copyright pull-left">版权</small>
-    <small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small>
   </div>
 </footer>
