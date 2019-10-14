@@ -45,7 +45,7 @@
         <?php endif; ?>
 
         <ul id="menu_member" class="menu_member nav navbar-nav navbar-right"><li><a href="#" class="">会员</a></li></ul >
-
+        <div class="tel-menu mob navbar-text">  微信 微博 | 语言</div>
       </div><!-- /.navbar-collapse -->
     </nav><!-- /.navbar -->
   </div></div> <!-- /.container  fluid -->

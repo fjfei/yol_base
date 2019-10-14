@@ -11,8 +11,14 @@
 
 // header
 // --------------------------------------------------
+.logged-in{
+  >#header{
+    margin-top: 24px;
+  }
+}
 #header{
-  padding-bottom: 40px;
+  background-color: #fff;
+  padding-bottom: 20px;
 }
 .navbar-header-top{
   height: 80px;
