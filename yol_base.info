@@ -24,6 +24,8 @@ plugins[panels][styles] = panels/styles
 stylesheets[all][]     = assets/css/yol_base.style.css
 
 ; Javascript
+scripts[] = libs/jquery.matchHeight-min.js
+
 ;scripts[] = assets/js/{{machine_name}}.script.js
 scripts[] = assets/js/radix.script.js
 
