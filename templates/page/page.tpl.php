@@ -89,12 +89,12 @@
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
 
-<div class="footer_top footer" role="footer">
+<div class="footer-top footer">
   <div class="container">
     <div class="row"><div class="col-xs-12">微信微博</div> </div>
   </div>
 </div>
-<footer id="footer" class="footer" role="footer">
+<footer id="footer" class="footer footer-dark" role="footer">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6">栏 1 左</div>
